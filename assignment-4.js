@@ -10,7 +10,8 @@ const fine = fare + fare * (20 / 100) + 30
 return fine
 
 }
-
+const total_Fine = totalFine(200)
+console.log(total_Fine)
 
 function onlyCharacter(str) {
 
@@ -25,7 +26,8 @@ const characters = str.split(' ').join('').toUpperCase();
 return characters
 
 }
-
+const only_Character = onlyCharacter("  h e llo wor   ld")
+console.log(only_Character)
 
 function bestTeam(player1, player2) {
 
@@ -58,6 +60,9 @@ return 'Tie'
 }
 
 }
+const best_Team = bestTeam({ name: "Brazil", foul: 5, cardY: 1, cardR: 0 },
+    { name: "Argentina", foul: 7, cardY: 0, cardR: 0 })
+console.log(best_Team)
 
 
 function isSame(arr1, arr2) {
@@ -89,7 +94,9 @@ return false
 }
 
 }
-
+const is_Same = isSame([1, 2, 3], [1, 2, 3])
+console.log(is_Same)
+ 
 function resultReport(marks) {
 
 if (Array.isArray(marks) != true) {
@@ -146,3 +153,6 @@ return student
 
 
 }
+const result_Report = resultReport([])
+console.log(result_Report)
+
